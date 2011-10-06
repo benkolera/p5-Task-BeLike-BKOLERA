@@ -17,9 +17,13 @@ requires 'Email::Date::Format';
 #Fixes Catalyst::Devel ( Req by Task::Catalyst ) 2011-10-06
 requires 'YAML::Tiny';
 
-#Catalyst
+#Catalyst / Web Apps
 requires 'Catalyst::Controller::HTML::FormFu';
+requires 'Catalyst::TraitFor::Model::DBIC::Schema::QueryLog::AdoptPlack';
+requires 'Plack::Middleware::Debug';
+requires 'Plack::Middleware::Debug::DBIC::QueryLog';
 requires 'Task::Catalyst';
+
 
 #Collection Utils
 requires 'Hash::Merge';
@@ -31,6 +35,7 @@ requires 'Set::Intersection';
 requires 'DateTime';
 requires 'DateTime::Format::Natural';
 requires 'DateTime::Format::Pg';
+requires 'DateTime::Set';
 
 #DB
 requires 'DBD::mysql';
@@ -55,7 +60,8 @@ requires 'Devel::NYTProf';
 requires 'Email::Stuff';
 requires 'IPC::Run3';
 requires 'Regexp::Trie';
-requires 'Term::ReadLine::Gnu'; #Requires libreadline to be installed.
+#Will never look installed to module install even if it is installed.
+requires 'Term::ReadLine::Gnu'; #Requires libreadline to be installed. 
 
 #Moose 
 requires 'Moose';
