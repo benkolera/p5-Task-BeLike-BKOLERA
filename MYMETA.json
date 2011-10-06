@@ -1,10 +1,11 @@
 {
    "abstract" : "All of my modules I like to keep around.",
    "author" : [
-      "Ben Kolera <<ben.kolera@gmail.com>>, Ben Kolera <ben.kolera@gmail.com>"
+      "Ben Kolera <<ben.kolera@gmail.com>>",
+      "Ben Kolera <ben.kolera@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.59, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Install version 1.02, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "perl_5"
    ],
@@ -15,8 +16,8 @@
    "name" : "Task-BeLike-BKOLERA",
    "no_index" : {
       "directory" : [
-         "t",
-         "inc"
+         "inc",
+         "t"
       ]
    },
    "prereqs" : {
@@ -27,7 +28,7 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker" : "6.42"
          }
       },
       "runtime" : {
@@ -50,6 +51,7 @@
             "DateTime::Format::Natural" : 0,
             "DateTime::Format::Pg" : 0,
             "Devel::NYTProf" : 0,
+            "Email::Date::Format" : 0,
             "Email::Stuff" : 0,
             "File::Temp" : 0,
             "Hash::Merge" : 0,
@@ -61,11 +63,10 @@
             "Log::Log4perl" : 0,
             "Method::Signatures" : 0,
             "Module::Build" : 0,
-            "Module::Install" : 0,
             "Moose" : 0,
             "Moose::Autobox" : 0,
-            "Moose::NonMoose" : 0,
             "MooseX::Declare" : 0,
+            "MooseX::NonMoose" : 0,
             "MooseX::Types::Common" : 0,
             "MooseX::Types::DateTime" : 0,
             "MooseX::Types::Email" : 0,
@@ -74,12 +75,12 @@
             "MooseX::Types::URI" : 0,
             "Path::Class" : 0,
             "Perl::Tidy" : 0,
+            "Perl::Version" : 0,
             "Pod::Weaver" : 0,
             "Regexp::Trie" : 0,
             "SOAP::Lite" : 0,
             "Set::Intersection" : 0,
             "Task::Catalyst" : 0,
-            "Term::ReadLine::Perl" : 0,
             "Test::Class" : 0,
             "Test::Differences" : 0,
             "Test::Exception" : 0,
@@ -90,6 +91,7 @@
             "Text::CSV" : 0,
             "TryCatch" : 0,
             "YAML::Any" : 0,
+            "YAML::Tiny" : 0,
             "autobox" : 0,
             "autodie" : 0,
             "namespace::autoclean" : 0
@@ -97,5 +99,10 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.02"
 }
