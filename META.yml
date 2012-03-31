@@ -4,11 +4,12 @@ author:
   - 'Ben Kolera <<ben.kolera@gmail.com>>'
   - 'Ben Kolera <ben.kolera@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.02'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,7 +18,6 @@ name: Task-BeLike-BKOLERA
 no_index:
   directory:
     - inc
-    - t
 requires:
   App::Ack: 0
   App::Whiff: 0
@@ -25,6 +25,7 @@ requires:
   CPAN::Mini: 0
   CPAN::Mini::Webserver: 0
   Catalyst::Controller::HTML::FormFu: 0
+  Catalyst::TraitFor::Model::DBIC::Schema::QueryLog::AdoptPlack: 0
   Config::JFDI: 0
   DBD::Mock: 0
   DBD::Pg: 0
@@ -36,7 +37,7 @@ requires:
   DateTime: 0
   DateTime::Format::Natural: 0
   DateTime::Format::Pg: 0
-  DateTime::Span: 0
+  DateTime::Set: 0
   Devel::NYTProf: 0
   Email::Date::Format: 0
   Email::Stuff: 0
@@ -63,6 +64,8 @@ requires:
   Path::Class: 0
   Perl::Tidy: 0
   Perl::Version: 0
+  Plack::Middleware::Debug: 0
+  Plack::Middleware::Debug::DBIC::QueryLog: 0
   Pod::Weaver: 0
   Regexp::Trie: 0
   SOAP::Lite: 0
@@ -86,4 +89,3 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
 version: 0.03
-

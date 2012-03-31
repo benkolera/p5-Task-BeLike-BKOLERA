@@ -23,7 +23,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.42"
+            "ExtUtils::MakeMaker" : "6.36"
          }
       },
       "configure" : {
@@ -39,6 +39,7 @@
             "CPAN::Mini" : 0,
             "CPAN::Mini::Webserver" : 0,
             "Catalyst::Controller::HTML::FormFu" : 0,
+            "Catalyst::TraitFor::Model::DBIC::Schema::QueryLog::AdoptPlack" : 0,
             "Config::JFDI" : 0,
             "DBD::Mock" : 0,
             "DBD::Pg" : 0,
@@ -50,7 +51,7 @@
             "DateTime" : 0,
             "DateTime::Format::Natural" : 0,
             "DateTime::Format::Pg" : 0,
-            "DateTime::Span" : 0,
+            "DateTime::Set" : 0,
             "Devel::NYTProf" : 0,
             "Email::Date::Format" : 0,
             "Email::Stuff" : 0,
@@ -77,6 +78,8 @@
             "Path::Class" : 0,
             "Perl::Tidy" : 0,
             "Perl::Version" : 0,
+            "Plack::Middleware::Debug" : 0,
+            "Plack::Middleware::Debug::DBIC::QueryLog" : 0,
             "Pod::Weaver" : 0,
             "Regexp::Trie" : 0,
             "SOAP::Lite" : 0,
@@ -106,5 +109,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
